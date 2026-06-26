@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>👁️ Ótica do Olho Humano</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
@@ -15,7 +14,7 @@
         <!-- Cabeçalho -->
         <header class="header">
             <h1>
-                <i class="fas fa-eye"></i> Ótica do Olho
+                <i class="fas fa-eye"></i> Ótica do Olho Humano
             </h1>
             <span class="badge-interativo">
                 <i class="fas fa-hand-pointer"></i> interativo
@@ -23,8 +22,8 @@
         </header>
 
         <div class="subhead">
-            <i class="fas fa-circle" style="font-size: 0.5rem; color: #facc15;"></i>
-            Anatomia, refração e percepção visual — explore imagens e vídeos
+            <i class="fas fa-circle" style="font-size: 0.5rem; color: #2d7d9a;"></i>
+            Anatomia, refração, percepção visual e muito mais — explore imagens e vídeos
         </div>
 
         <!-- Navegação por abas -->
@@ -38,32 +37,66 @@
             <button class="tab-btn" data-tab="explorar">
                 <i class="fas fa-microscope"></i> Explorar
             </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i class="fas fa-lightbulb"></i> Curiosidades
+            </button>
         </nav>
 
         <!-- ===== ABA 1: IMAGENS ===== -->
         <section id="imagens" class="tab-content active">
             <div class="grid-imagens">
+                <!-- Card 1 -->
                 <div class="card-img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Schematic_diagram_of_the_human_eye_en.svg/1200px-Schematic_diagram_of_the_human_eye_en.svg.png" alt="Diagrama do olho" loading="lazy" />
                     <h3><i class="fas fa-vector-square"></i> Estrutura do olho</h3>
-                    <p>Córnea, cristalino, retina — os meios ópticos que focam a luz.</p>
-                    <span class="tag"><i class="far fa-clock"></i> anatomia</span>
+                    <p><strong>Córnea:</strong> 2/3 do poder refrativo.<br>
+                    <strong>Cristalino:</strong> foco dinâmico.<br>
+                    <strong>Retina:</strong> converte luz em sinais neurais.<br>
+                    <strong>Nervo óptico:</strong> transmite ao cérebro.</p>
+                    <span class="tag"><i class="far fa-clock"></i> anatomia completa</span>
                 </div>
+                <!-- Card 2 -->
                 <div class="card-img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Refracci%C3%B3n_ocular.svg/1200px-Refracci%C3%B3n_ocular.svg.png" alt="Trajeto da luz" loading="lazy" />
                     <h3><i class="fas fa-arrows-left-right"></i> Refração da luz</h3>
-                    <p>A luz é desviada pela córnea e cristalino, formando imagem na fóvea.</p>
+                    <p>A luz atravessa a <strong>córnea</strong>, sofre refração no <strong>cristalino</strong> e forma imagem invertida na <strong>fóvea</strong> (centro da retina).</p>
                     <span class="tag"><i class="fas fa-arrow-right"></i> caminho óptico</span>
                 </div>
+                <!-- Card 3 -->
                 <div class="card-img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Myopia_and_hyperopia.svg/1200px-Myopia_and_hyperopia.svg.png" alt="Miopia e hipermetropia" loading="lazy" />
                     <h3><i class="fas fa-glasses"></i> Defeitos refrativos</h3>
-                    <p>Miopia, hipermetropia e astigmatismo — como as lentes corrigem.</p>
+                    <p><strong>Miopia:</strong> imagem formada antes da retina (lente divergente).<br>
+                    <strong>Hipermetropia:</strong> imagem atrás da retina (lente convergente).<br>
+                    <strong>Astigmatismo:</strong> córnea com curvatura irregular.</p>
                     <span class="tag"><i class="fas fa-exclamation-triangle"></i> ametropias</span>
+                </div>
+                <!-- Card 4: NOVA IMAGEM -->
+                <div class="card-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cones_SMJ2_E.svg/1200px-Cones_SMJ2_E.svg.png" alt="Cones e bastonetes" loading="lazy" />
+                    <h3><i class="fas fa-circle"></i> Cones &amp; Bastonetes</h3>
+                    <p><strong>Bastonetes:</strong> 120 milhões, visão noturna.<br>
+                    <strong>Cones:</strong> 6 milhões, visão colorida (3 tipos: S, M, L).<br>
+                    <strong>Fóvea:</strong> 100.000 cones/mm².</p>
+                    <span class="tag"><i class="fas fa-palette"></i> fotorreceptores</span>
+                </div>
+                <!-- Card 5: NOVA IMAGEM -->
+                <div class="card-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Human_eyesight_two_children_and_ball_normal_vision.jpg/1200px-Human_eyesight_two_children_and_ball_normal_vision.jpg" alt="Visão normal" loading="lazy" />
+                    <h3><i class="fas fa-check-circle"></i> Visão normal</h3>
+                    <p>Olhos alinhados, boa acuidade visual, percepção de profundidade e cores. Campo visual de cerca de 200°.</p>
+                    <span class="tag"><i class="fas fa-check"></i> saudável</span>
+                </div>
+                <!-- Card 6: NOVA IMAGEM -->
+                <div class="card-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Color_blindness_dichromatic.png/1200px-Color_blindness_dichromatic.png" alt="Daltonismo" loading="lazy" />
+                    <h3><i class="fas fa-palette"></i> Daltonismo</h3>
+                    <p>Deficiência na percepção de cores, geralmente nos cones S (azul), M (verde) ou L (vermelho). Mais comum em homens (8%).</p>
+                    <span class="tag"><i class="fas fa-eye-slash"></i> anomalia cromática</span>
                 </div>
             </div>
             <div class="hint">
-                <i class="fas fa-mouse-pointer"></i> passe o mouse para ampliar
+                <i class="fas fa-mouse-pointer"></i> passe o mouse para ampliar os cards
             </div>
         </section>
 
@@ -74,8 +107,8 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/0zqWLTQn7E0" title="Anatomia do olho" allowfullscreen></iframe>
                     </div>
-                    <h4><i class="fab fa-youtube"></i> Como funciona o olho</h4>
-                    <p>Animação completa sobre a anatomia e o trajeto da luz.</p>
+                    <h4><i class="fab fa-youtube"></i> Anatomia do olho humano</h4>
+                    <p>Animação detalhada de todas as estruturas do olho e suas funções.</p>
                     <a href="https://www.youtube.com/watch?v=0zqWLTQn7E0" target="_blank" class="link-yt">
                         <i class="fab fa-youtube"></i> Assistir no YouTube
                     </a>
@@ -84,8 +117,8 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/W1aZ5-9hXko" title="Refração e foco" allowfullscreen></iframe>
                     </div>
-                    <h4><i class="fab fa-youtube"></i> Refração &amp; foco</h4>
-                    <p>Entenda como córnea e cristalino refratam a luz para formar imagem.</p>
+                    <h4><i class="fab fa-youtube"></i> Refração &amp; formação da imagem</h4>
+                    <p>Como a luz é refratada pela córnea e cristalino para formar imagem nítida.</p>
                     <a href="https://www.youtube.com/watch?v=W1aZ5-9hXko" target="_blank" class="link-yt">
                         <i class="fab fa-youtube"></i> Assistir no YouTube
                     </a>
@@ -95,8 +128,18 @@
                         <iframe src="https://www.youtube.com/embed/8zWUk_X7k10" title="Miopia, hipermetropia, astigmatismo" allowfullscreen></iframe>
                     </div>
                     <h4><i class="fab fa-youtube"></i> Defeitos visuais</h4>
-                    <p>Miopia, hipermetropia e astigmatismo explicados com exemplos.</p>
+                    <p>Explicação completa sobre miopia, hipermetropia, astigmatismo e presbiopia.</p>
                     <a href="https://www.youtube.com/watch?v=8zWUk_X7k10" target="_blank" class="link-yt">
+                        <i class="fab fa-youtube"></i> Assistir no YouTube
+                    </a>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/UF9HhplUoBw" title="Como enxergamos as cores" allowfullscreen></iframe>
+                    </div>
+                    <h4><i class="fab fa-youtube"></i> Percepção das cores</h4>
+                    <p>Entenda como os cones e o cérebro processam as cores que vemos.</p>
+                    <a href="https://www.youtube.com/watch?v=UF9HhplUoBw" target="_blank" class="link-yt">
                         <i class="fab fa-youtube"></i> Assistir no YouTube
                     </a>
                 </div>
@@ -107,33 +150,69 @@
         <section id="explorar" class="tab-content">
             <div class="explorar-grid">
                 <div class="explorar-card">
-                    <h3><i class="fas fa-lightbulb" style="color: #facc15;"></i> Você sabia?</h3>
+                    <h3><i class="fas fa-microscope"></i> Anatomia detalhada</h3>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> O olho humano tem cerca de 2,5 cm de diâmetro.</li>
-                        <li><i class="fas fa-check-circle"></i> A córnea é responsável por 2/3 do poder refrativo.</li>
-                        <li><i class="fas fa-check-circle"></i> A retina possui 120 milhões de bastonetes e 6 milhões de cones.</li>
-                        <li><i class="fas fa-check-circle"></i> A fóvea é a região de maior acuidade visual.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Córnea:</strong> transparente, avascular, curvatura fixa.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Íris:</strong> controla a entrada de luz pela pupila.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Cristalino:</strong> lente biconvexa que ajusta o foco.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Humor vítreo:</strong> gel transparente que mantém o formato do olho.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Retina:</strong> camada neural com fotorreceptores.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Nervo óptico:</strong> conecta o olho ao cérebro (processamento visual).</li>
                     </ul>
                 </div>
                 <div class="explorar-card">
-                    <h3><i class="fas fa-arrows-spin" style="color: #facc15;"></i> Interaja</h3>
-                    <p>Clique nas abas acima para alternar entre imagens, vídeos e curiosidades.</p>
-                    <div class="tags-interativas">
-                        <span><i class="fas fa-video"></i> 3 vídeos</span>
-                        <span><i class="fas fa-image"></i> 3 diagramas</span>
-                    </div>
+                    <h3><i class="fas fa-arrows-spin"></i> Processo visual</h3>
+                    <ol style="color: #1a3a4a; padding-left: 1.2rem;">
+                        <li style="padding: 0.3rem 0;">A luz entra pela <strong>córnea</strong> (refração inicial).</li>
+                        <li style="padding: 0.3rem 0;">Passa pela <strong>pupila</strong> (regulada pela íris).</li>
+                        <li style="padding: 0.3rem 0;">O <strong>cristalino</strong> ajusta o foco (acomodação).</li>
+                        <li style="padding: 0.3rem 0;">A imagem é projetada na <strong>retina</strong> (invertida).</li>
+                        <li style="padding: 0.3rem 0;">Fotorreceptores convertem luz em <strong>sinais elétricos</strong>.</li>
+                        <li style="padding: 0.3rem 0;">O <strong>nervo óptico</strong> transmite ao cérebro.</li>
+                        <li style="padding: 0.3rem 0;">O <strong>córtex visual</strong> interpreta a imagem.</li>
+                    </ol>
                 </div>
             </div>
         </section>
 
-        <!-- Rodapé com curiosidade -->
-        <div class="curiosidades">
-            <span><i class="fas fa-microscope"></i> <strong>Curiosidade:</strong> O olho humano consegue diferenciar cerca de 10 milhões de cores.</span>
+        <!-- ===== ABA 4: CURIOSIDADES ===== -->
+        <section id="curiosidades" class="tab-content">
+            <div class="curiosidades-grid">
+                <div class="curiosidade-card">
+                    <h4><i class="fas fa-bolt"></i> Velocidade</h4>
+                    <p>O olho humano processa imagens em <strong>13 milissegundos</strong>. É mais rápido que uma câmera profissional!</p>
+                </div>
+                <div class="curiosidade-card">
+                    <h4><i class="fas fa-palette"></i> Cores</h4>
+                    <p>Conseguimos distinguir cerca de <strong>10 milhões</strong> de cores diferentes.</p>
+                </div>
+                <div class="curiosidade-card">
+                    <h4><i class="fas fa-moon"></i> Visão noturna</h4>
+                    <p>Os bastonetes são tão sensíveis que podem detectar um <strong>único fóton</strong> de luz.</p>
+                </div>
+                <div class="curiosidade-card">
+                    <h4><i class="fas fa-brain"></i> Processamento</h4>
+                    <p>Cerca de <strong>30%</strong> do córtex cerebral é dedicado ao processamento visual.</p>
+                </div>
+                <div class="curiosidade-card">
+                    <h4><i class="fas fa-tint"></i> Lágrimas</h4>
+                    <p>Produzimos de <strong>15 a 30</strong> litros de lágrimas por ano! Elas lubrificam e protegem o olho.</p>
+                </div>
+                <div class="curiosidade-card">
+                    <h4><i class="fas fa-dna"></i> Genética</h4>
+                    <p>A cor dos olhos é determinada por <strong>16 genes</strong> diferentes, não apenas 1 como se pensava.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <div class="curiosidades-destaque">
+            <span><i class="fas fa-microscope"></i> <strong>Curiosidade:</strong> O olho humano tem cerca de 2,5 cm de diâmetro e pesa aproximadamente 7 gramas.</span>
             <span class="badge-cor"><i class="fas fa-rainbow"></i> 100.000 cones/mm² na fóvea</span>
         </div>
 
         <footer>
-            <i class="fas fa-eye"></i> Ótica do Olho · site interativo com imagens e vídeos · <i class="fab fa-youtube" style="color: #ff3b30;"></i> conteúdo educacional
+            <i class="fas fa-eye"></i> Ótica do Olho Humano · conteúdo educacional com imagens, vídeos e curiosidades · <i class="fab fa-youtube" style="color: #ff3b30;"></i> vídeos explicativos
         </footer>
     </div>
 
