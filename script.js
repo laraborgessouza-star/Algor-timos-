@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab-btn');
     
     const contents = {
@@ -10,20 +10,39 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function activateTab(tabId) {
-        tabs.forEach(btn => btn.classList.remove('active'));
-        Object.values(contents).forEach(content => {
-            if (content) content.classList.remove('active');
+        // Remove active de todos os botões
+        tabs.forEach(function(btn) {
+            btn.classList.remove('active');
         });
 
-        const activeBtn = Array.from(tabs).find(btn => btn.dataset.tab === tabId);
-        if (activeBtn) activeBtn.classList.add('active');
+        // Remove active de todos os conteúdos
+        for (var key in contents) {
+            if (contents[key]) {
+                contents[key].classList.remove('active');
+            }
+        }
 
-        if (contents[tabId]) contents[tabId].classList.add('active');
+        // Adiciona active ao botão clicado
+        var activeBtn = null;
+        tabs.forEach(function(btn) {
+            if (btn.dataset.tab === tabId) {
+                activeBtn = btn;
+            }
+        });
+        if (activeBtn) {
+            activeBtn.classList.add('active');
+        }
+
+        // Adiciona active ao conteúdo correspondente
+        if (contents[tabId]) {
+            contents[tabId].classList.add('active');
+        }
     }
 
-    tabs.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const tabId = btn.dataset.tab;
+    // Adiciona evento de clique em cada botão
+    tabs.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            var tabId = this.dataset.tab;
             activateTab(tabId);
         });
     });
