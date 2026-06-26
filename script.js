@@ -4,13 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const contents = {
         imagens: document.getElementById('imagens'),
         videos: document.getElementById('videos'),
-        explorar: document.getElementById('explorar'),
+        anatomia: document.getElementById('anatomia'),
+        fisica: document.getElementById('fisica'),
         curiosidades: document.getElementById('curiosidades')
     };
 
     function activateTab(tabId) {
         tabs.forEach(btn => btn.classList.remove('active'));
-        Object.values(contents).forEach(content => content.classList.remove('active'));
+        Object.values(contents).forEach(content => {
+            if (content) content.classList.remove('active');
+        });
 
         const activeBtn = Array.from(tabs).find(btn => btn.dataset.tab === tabId);
         if (activeBtn) activeBtn.classList.add('active');
